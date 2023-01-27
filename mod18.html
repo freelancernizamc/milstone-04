@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milstone-04: Module-18</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 50px;
+            background-color: #0F0826;
+            color: bisque;
+        }
+        nav ul{
+            display:flex;
+            align-items: center;
+        }
+        .nav-logo{
+            width:20%;
+            background-color: #0F0826;
+            color:blanchedalmond;
+            display: flex;
+            align-items: center;
+        }
+        .nav-logo img{
+            width: 70px;
+            height: 70px;
+            border-radius: 50px;
+        }
+        .nav-logo h1{
+            font-size: 30px;
+            font-weight: bold;
+            color:aqua;
+        }
+        nav ul li{
+            list-style-type: none;
+            padding-left: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:blanchedalmond;
+        }
+        nav ul li a:hover{
+            color:aqua;
+        }
+        nav li .dropdown{
+        display: none;
+        position: absolute;
+        background-color: #0F0826;
+        padding-left: 0px;
+        padding-bottom: 5px;
+        }
+        nav li:hover .dropdown{
+            display: block;
+        }
+        .banner{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #0F0826;
+        }
+        .banner-text h1{
+            font-size: 50px;
+            font-weight: bold;
+            color:aqua;
+        }
+        .banner-text h2{
+            color: coral;
+        }
+        .banner-img img{
+            border-radius: 50%;
+        }
+        .title{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 50px;
+            font-weight: bolder;
+            color: #0F0826;
+        }
+        .video{
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: navy;
+        }
+        .video2{
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            color:green;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="images/nizam.png">
+                <h1>Milstone-04<br>Module-18</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Mod17.html">Module-17</a></li>
+                <li><a href="Mod19.html">Module-19</a></li>
+                <li><a href="Mod20.html">Module-20</a></li>
+                <li><a href="Mod20.html">Module-21</a></li>
+                <li><a href="Mod20.html">Milstone</a>
+                    <ul class="dropdown">
+                        <li class="dropdown-content"><a href="#">Milstone-01</a></li>
+                        <li><a href="#">Milstone-02</a></li>
+                        <li><a href="#">Milstone-03</a></li>
+                        <li><a href="#">Milstone-04</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <div class="banner-text">
+                <h2>Assalamualaikum</h2>
+                <h1>I am Nizam</h1>
+                <h2> Student of Batch-7</h2>
+                <h2>I am a Professional Web Developer</h2>
+            </div>
+            <div class="banner-img">
+                <img src="images/nizam2.png">
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="title"> Module-18 Practice Section</h1>
+        <h2 class="video">Video 18-0: Basic Concepts of variable all in one</h2>
+        <h3 class="video2">Video 18-1: Module Introduction and Variable recap</h3>
+        <h2 class="video">Video 18-2 : Declare Array, array length and array index</h2>
+        <h3 class="video2">Video 18-3 : Array index, get and set by index, indexOf</h3>
+        <h2 class="video">Video 18-4 : Add or remove element from array using push, pop</h2>
+        <p class="video2"> Search Google: How to add an element to an array of the beginning. and how to remove first element of an array of javascript</p>
+    </main>
+</body>
+</html>
