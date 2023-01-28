@@ -81,6 +81,7 @@
             font-size: 50px;
             font-weight: bolder;
             color: #0F0826;
+            background-color: yellow;
         }
         .video{
             text-align: center;
@@ -94,6 +95,36 @@
             font-weight: bold;
             color:green;
         }
+        .quiz{
+            margin-left: 50px;
+        }
+        footer{
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #0F0826;
+            color: bisque;
+        }
+        .part1 img{
+            width: 40%;
+            border-radius: 50px;
+        }
+        .part2{
+            display: inline;
+        }
+        .part2 li{
+            list-style-type: none;
+            padding-bottom: 10px;
+        }
+        .part2 li a{
+            text-decoration: none;
+            color: bisque;
+        }
+        .part2 li a:hover{
+            color:aqua;
+        }
+        
         
     </style>
 </head>
@@ -140,6 +171,76 @@
         <h3 class="video2">Video 18-3 : Array index, get and set by index, indexOf</h3>
         <h2 class="video">Video 18-4 : Add or remove element from array using push, pop</h2>
         <p class="video2"> Search Google: How to add an element to an array of the beginning. and how to remove first element of an array of javascript</p>
+        <h2 class="video">Video 18-5 Compare variables and Comparison operator</h1>
+        <h3 class="video2">Video 18-6 Make conditional decision, if-else, comparison</h3>
+        <h2 class="video">Video 18-7 Handle multiple conditions, and or</h2>
+        <h3 class="video2">Video 18-8 (advanced) Multi stage condition and nested conditionsr</h3>
+        <h2 class="video">18-9 Module summary and two more comparison</h2>
+        <section class="quiz">
+            <h1 class="title">QUIZ</h1>
+            <h2> Q1: What is the starting index of an array?<br>
+            Ans: 0 </h2>
+            <h2> Q2: What would be the index of “developer” in the array?
+
+                var dream = [“I”, “will”, “become”, “a”, “developer”, “inshallah”];<br>
+            Ans: 4 </h2>
+            <h2> Q3: How will you get the second element of the array arr = [3, 7, 10]?<br>
+            Ans: arr[1]</h2>
+            <h2> Q4: What is the output of the following code snippet?
+
+                let myArray = [1, 2, 3, 4, 5];
+                console.log(myArray[2]);<br>
+            Ans: 3 </h2>
+            <h2> Q5: Which of the following array methods adds an element to the end of an array?<br>
+            Ans: push </h2>
+            <h2> Q6: What is the output of the following code snippet?
+
+                let x = 5;
+                let y = 10;
+                if (x < y) {
+                 console.log("x is less than y");
+                } else {
+                 console.log("x is greater than or equal to y");
+                }
+                <br> Ans: x is less than y</h2>
+                <h2> Q7S: What will be the output console.log(6 != 6); <br>
+                Ans: false </h2>
+                <h2> Q8: What will be the output console.log(6 >= 6);<br>
+                Ans: true </h2>
+                <h2> Q9: Where you don’t have to add a condition?<br> Ans: else </h2>
+                <h2> Q10: Which JavaScript array method removes and returns the last element of an array?<br>
+                Ans: pop() </h2>
+                <h1 class="title">The End</h1>
+        </section>
     </main>
+    <footer>
+        <div class="part1">
+            <img src="images/nizam2.png">
+            <h1>Md Nizam Uddin</h1>
+            <h2>Batch 07</h2>
+            <h3></h3>
+        </div>
+        <div class="part2">
+            <h1>Assignment</h1>
+                <li><a href="#">Assignment-01</a></li>
+                <li><a href="#">Assignment-02</a></li>
+                <li><a href="#">Assignment-03</a></li>
+                <li><a href="#">Assignment-04</a></li>
+        </div>
+        <div class="part2">
+            <h1>My Projects</h1>
+            <li><a href="#">Digital Agency</li>
+            <li><a href="#">Digital Agency</li>
+            <li><a href="#">Digital Agency</li>
+            <li><a href="#">Digital Agency</li>
+        </div>
+        <div class="part2">
+            <h2 style="color:bisque;font-size:25px;">Milstone</h2>
+            <li><a href="#">Milstone-01</li>
+            <li><a href="#">Milstone-02</li>
+            <li><a href="#">Milstone-03</li>
+            <li><a href="index.html">Milstone-04</li>
+        </div>
+    </footer>
 </body>
 </html>
