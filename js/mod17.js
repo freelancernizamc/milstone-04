@@ -86,3 +86,14 @@ var motherGave = 119;
 var divide = 5;
 var remainder = motherGave % divide;
 console.log(remainder);
+
+// Loop
+for(var i= 0;  i<20; i++){
+    console.log(i);
+}
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (var i =0;i< numbers.length; i++){
+    var element = numbers[i];
+    console.log(element);
+}
+// number.sort()
