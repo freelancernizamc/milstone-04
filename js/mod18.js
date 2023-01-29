@@ -256,3 +256,20 @@ var side3 = 9;
 if(side1==side2 || side1==side3 || side2 || side3){
     console.log('issosceless');
 }
+
+// // Break
+for(var i = 30; i<86; i++){
+    if(i>50){
+        break;
+    }
+console.log(" "+i);
+
+}
+// continue
+// for(var i = 30; i<86; i++){
+//     if(i>50){
+//         continue;
+//     }
+// console.log(" "+i);
+
+// }
