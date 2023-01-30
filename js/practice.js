@@ -97,32 +97,46 @@ console.log(myLearned);
 
 // Create an array for all the mobile phones which you use. Diplay all the elements of the array by using while loop
 var myPhone = ['nokia', 'motorola', 'vsun', 'sumsung'];
-for(var i =0; i< myPhone.length; i++){
-    var element = myPhone[i];
-    console.log(element);
+// for(var i =0; i< myPhone.length; i++){
+//     var element = myPhone[i];
+//     console.log(element);
+// }
+// By While loop
+var i =0;
+while(i<myPhone.length){
+    console.log(myPhone[i]);
+    i++;
 }
 
-// // break
-// for(var i = 30; i<=86; i++){
-//     if(i> 44){
-//         break;
-//     }
-//     console.log(" "+i);
-// }
-// continue
-// for(var b = 30; b<=88; b++){
-//     if(b=40){
-//         continue;
-//     }
-//     console.log(" "+b);
-// }
-// Write the price of the books you HashChangeEvent. display the price if the price is lower than 200
-var  bookPrice = [150, 177, 200, 300];
-if(bookPrice < 200){
-    console.log(bookPrice);
+// break: Run a loop from 30 to 86. This loop will stop if the values get higher 44.
+for(var i = 30; i<=86; i++){
+    if(i> 44){
+        break;
+    }
+    // console.log(" "+i);
+    console.log(i);
 }
-else{
-    console.log("try other");
+// continue
+for(var b = 30; b<=88; b++){
+    if(b<35){
+        continue;
+    }
+    console.log(b);
+}
+// Write the price of the books you have. display the price if the price is lower than 200
+var  bookPrice = [150, 177, 200, 300];
+// if(bookPrice < 200){
+//     console.log(bookPrice);
+// }
+// else{
+//     console.log("try other");
+// }
+for (var i = 0; i<bookPrice.length; i++){
+    var price = bookPrice[i];
+    if(price>200){
+        continue;
+    }
+    console.log(price);
 }
 
 // Coceptual Section
@@ -292,3 +306,10 @@ for(var i =0; i< friends.length; i++){
 }
 var num9 = [3, 1, 6, 2, 4, 7, 5];
 console.log(num9.sort());
+// How do you replace variable
+ var fruits = 'mango';
+
+console.log(fruits.replace('mango', 'jackfruit'));
+var totn_string = 'TechOnTheNet is great';
+
+console.log(totn_string.replace('great', 'the best'));

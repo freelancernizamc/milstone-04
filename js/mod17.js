@@ -96,4 +96,15 @@ for (var i =0;i< numbers.length; i++){
     var element = numbers[i];
     console.log(element);
 }
-// number.sort()
+// number.sort();
+function movie(){
+
+  return "Din-The day";
+
+  return "Poran";
+
+  return "Hawa";
+
+}
+
+console.log(movie());
