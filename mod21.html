@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milstone-04: Module-21</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 50px;
+            background-color: #0F0826;
+            color: bisque;
+        }
+        nav ul{
+            display:flex;
+            align-items: center;
+        }
+        .nav-logo{
+            width:20%;
+            background-color: #0F0826;
+            color:yellow;
+            display: flex;
+            align-items: center;
+        }
+        .nav-logo img{
+            width: 70px;
+            height: 70px;
+            border-radius: 50px;
+        }
+        .nav-logo h1{
+            font-size: 30px;
+            font-weight: bold;
+            color:yellowgreen;
+        }
+        nav ul li{
+            list-style-type: none;
+            padding-left: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:blanchedalmond;
+        }
+        nav ul li a:hover{
+            color:aqua;
+        }
+        nav li .dropdown{
+        display: none;
+        position: absolute;
+        background-color: #0F0826;
+        padding-left: 0px;
+        padding-bottom: 5px;
+        }
+        nav li:hover .dropdown{
+            display: block;
+        }
+        .banner{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #0F0826;
+        }
+        .banner-text h1{
+            font-size: 60px;
+            font-weight: bold;
+            color:yellowgreen;
+        }
+        .banner-text h2{
+            color: coral;
+        }
+        .banner-img img{
+            border-radius: 50%;
+        }
+        .title{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 50px;
+            font-weight: bolder;
+            color: #0F0826;
+            background-color: yellow;
+        }
+        .video{
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: navy;
+        }
+        .video2{
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            color:green;
+        }
+        .quiz{
+            margin-left: 50px;
+        }
+        footer{
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #0F0826;
+            color: bisque;
+        }
+        .part1 img{
+            width: 40%;
+            border-radius: 50px;
+        }
+        .part2{
+            display: inline;
+        }
+        .part2 li{
+            list-style-type: none;
+            padding-bottom: 10px;
+        }
+        .part2 li a{
+            text-decoration: none;
+            color: bisque;
+        }
+        .part2 li a:hover{
+            color:aqua;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="images/nizam.png">
+                <h1>Milstone-04<br>Module-21</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Mod17.html">Module-17</a></li>
+                <li><a href="Mod18.html">Module-18</a></li>
+                <li><a href="mod_19/mod19.html">Module-19</a></li>
+                <li><a href="Mod20.html">Module-20</a></li>
+                <li><a href="Mod22.html">Module-22</a></li>
+                <li><a href="Mod20.html">Milstone</a>
+                    <ul class="dropdown">
+                        <li class="dropdown-content"><a href="#">Milstone-01</a></li>
+                        <li><a href="#">Milstone-02</a></li>
+                        <li><a href="#">Milstone-03</a></li>
+                        <li><a href="#">Milstone-04</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <div class="banner-text">
+                <h2>Assalamualaikum</h2>
+                <h1>I am Nizam</h1>
+                <h2> Student of Batch-7</h2>
+                <h2>I am a Professional Web Developer</h2>
+            </div>
+            <div class="banner-img">
+                <img src="images/nizam.png">
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="title"> Module-21 Practice Section</h1>
+        <h2 class="video">Video 21-0 What are function</h2>
+        <h3 class="video2">Video21-1 :JS Concepts recap, var, let, and const </h3>
+        <h3 class="video">Video 21-2 :21-2 Unit Convert Inch to Feet, miles to kilometer</h3>
+        <h3 class="video2">Video 21-3:  Check even and odd number using function</h3>
+        <h3 class="video">Video 21-4 Check whether a year is a Leap Year or not (simplified way)</h3>
+        <h2 class="video2"> Search google: javascript leap year logic</h2>
+        <h2 class="video"> 21-5 : Calculate Sum of all numbers of an array</h2>
+        <h2 class="video2"> 21-6 Get Odd Numbers of an array and get odd Sum of an array</h2>
+        <h2 class="video"> 21-7 : Calculate Factorial of a number using for loop</h2>
+        <h2 class="video2"> 21-8 : Factorial using a while loop or a decrementing loop </h2>
+        <h2 class="video"> 21-9 : Module Summary and Simple JavaScript debug</h2>
+        <h1 class="title"> QUIZ</h1>
+        <h2 class="video2"> Q1: Fill in the blanks.<br>
+
+            function inchToFeet(___){ var feet = inch/12; _____ feet; }<br>
+        Ans: inch, return</h2>
+        <h2 class="video"> Q2: What is a scripting language? (just google it and even you do not understand anything)<br>
+        Ans: A programming language that is interpreted, code translated into machine code when the code is run, Scripting<br>
+    language are often used for short scripts</h2>
+    <h2 class="video2"> Q3: Which one is not true? (Just google “interpreted vs compiled language” and read the freecodecamp.org article even you do not understand anything)<br>
+    Ans: javascript is a compiled language</h2>
+    <h2 class="video"> Q4: Which one is not equal to 6!? (just checking)<br>
+    Ans: 6*5*3!</h2>
+    <h2 class="video2"> Q5: Which one of the following cannot be used at the time of declaring a variable in JavaScript? (be careful)<br>
+    Ans: const</h2>
+    <h2 class="video2"> Q6: which one will give you an odd number?<br>
+    Ans: num%2 ==1 </h2>
+    <h2 class="video"> Q7: Fill in the blank to see 10 numbers as output?<br>
+
+        for(let i = 0; _____?_____; i++){ }<br>
+    Ans: i< 10</h2>
+    <h2 class="video2"> Q8: Fill the blank for 10 numbers decrementing loop?
+
+        for( let i = 10; ______?_____; i--){ }<br>
+    Ans: i>= 1 <h2>
+    <h2 class="video"> Q9: What will be the output?<br>
+
+        function print(a, b, c){<br>
+          return a+2;<br>
+          return a*b;<br>
+          return b*c+a;<br>
+        }
+        console.log(print(1,2,3));<br>
+    Ans: 3<h2>
+        <h2 class="video2"> Q10: Which is not correct?<br>
+            Ans: if(item => 50){};</h2>
+            <h1 class="title"> The End</h1>
+            
+        </main>
+        <footer>
+            <div class="part1">
+                <img src="images/nizam.png">
+                <h1>Md Nizam Uddin</h1>
+                <h2>Batch 07</h2>
+                <h3></h3>
+            </div>
+            <div class="part2">
+                <h1>Assignment</h1>
+                    <li><a href="#">Assignment-01</a></li>
+                    <li><a href="#">Assignment-02</a></li>
+                    <li><a href="#">Assignment-03</a></li>
+                    <li><a href="#">Assignment-04</a></li>
+            </div>
+            <div class="part2">
+                <h1>My Projects</h1>
+                <li><a href="#">Digital Agency</li>
+                <li><a href="#">Digital Agency</li>
+                <li><a href="#">Digital Agency</li>
+                <li><a href="#">Digital Agency</li>
+            </div>
+            <div class="part2">
+                <h2 style="color:bisque;font-size:25px;">Milstone</h2>
+                <li><a href="#">Milstone-01</li>
+                <li><a href="#">Milstone-02</li>
+                <li><a href="#">Milstone-03</li>
+                <li><a href="index.html">Milstone-04</li>
+            </div>
+        </footer>
+    </body>
+    </html>
+
+
+
