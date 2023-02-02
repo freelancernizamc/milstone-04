@@ -108,3 +108,13 @@ function movie(){
 }
 
 console.log(movie());
+// To see length of array
+
+var arr= [20, 10, 70];
+console.log(arr.length);
+
+// To include elements in array
+arr[3] = 50;
+arr[4] = 70;
+arr[5] = 90;
+console.log(arr);

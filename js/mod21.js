@@ -13,27 +13,27 @@ var myName = 'Nizam';
 // math operation +,-, *,/
 // shorthand: +=, --, *=, /=, ++, --
 //  2. Array
-var friends = ['abul', 'babul', 'cabul', 'dabul'];
-var thirdFriend = friends[2];
-friends[3] = 'dambool';
+// var friends = ['abul', 'babul', 'cabul', 'dabul'];
+// var thirdFriend = friends[2];
+// friends[3] = 'dambool';
 // 3. conditionals
 // >, <, >=,==, ===, !=, !===
 
-if(friends.length <2){
-    console.log('fokor tor kono friend nai');
-}
-else{
-    console.log('You have friend');
-}
+// if(friends.length <2){
+//     console.log('fokor tor kono friend nai');
+// }
+// else{
+//     console.log('You have friend');
+// }
 // 4. loop
-var number = 0;
-while(number <= 6){
-    console.log(number);
-    number++;
-}
-for(var i = 0; i <= 10; i++){
-    console.log(i);
-}
+// var number = 0;
+// while(number <= 6){
+//     console.log(number);
+//     number++;
+// }
+// // for(var i = 0; i <= 10; i++){
+// //     console.log(i);
+// }
 
 // 5. function
 // function isMoonUp(time){
@@ -49,10 +49,10 @@ for(var i = 0; i <= 10; i++){
 //     romanticism: 'havvy',
 //     baerTaka: 'borolok',
 // }
-let age =11;
-age = 12;
-const countryName = 'Bangladesh';
-console.log(age, countryName);
+// let age =11;
+// age = 12;
+// const countryName = 'Bangladesh';
+// console.log(age, countryName);
 
 // Video 21-2 Unit Convert Inch to Feet, miles to kilometer
 
@@ -235,13 +235,78 @@ console.log('your year', isyourYearLeapYear);
 // console.log('factorial of', number);
 
 // Video 21-9 Module Summary and Simple JavaScript debug
-function getFactorial(number){
-    let factorial = 1;
-    for(let i = 1; i <= number; i ++){
-        factorial = factorial * i;
-        console.log(i, factorial);
+// function getFactorial(number){
+//     let factorial = 1;
+//     for(let i = 1; i <= number; i ++){
+//         factorial = factorial * i;
+//         console.log(i, factorial);
+//     }
+//     return factorial;
+// }
+// const factorial = getFactorial(12);
+// console.log('factorial of 12 is:', factorial);
+
+// Conceptual section
+// for loop
+// for(var i = 0; i < 10; i++){
+//      console.log("sorry");
+// }
+    // var friends = ["mim", "robin", "jobbar", "borkat"]
+    // console.log(friends[2]);
+    // console.log(friends[3]);
+
+    // for (var i = 0; i < friends.length; i++){
+    //     var element = friends[2];
+    //     console.log(element);
+    // }
+    // Object
+    var human = {
+        name:"rahim",
+        age: 25,
+        friends:["hero", "alom", "manna"],
+        country:"Bangladesh",
+    };
+    console.log(human.friends);
+    console.log(human.age);
+    for (var i=0; i < human.friends.length; i++){
+        console.log(human.friends);
     }
-    return factorial;
+
+    // Function
+    // function sum(num1, num2){
+    //     console.log(num1, num2);
+    // }
+    // sum(10, 20);
+    function sum(number1, number2){
+        var result = number1 + number2;
+        // var result2 = number1 / number2;
+        // var result3 = number1 * number2;
+        // console.log(result);
+        // console.log(result3);
+        
+        // console.log(result2);
+        return result;
+    }
+    sum(800, 400);
+    function minus(number1, number2){
+        var result = number1 - number2;
+        return result;
+    }
+    var totalMinus = minus(600, 400);
+    var totalSum = sum(1000, 2005);
+    const total = totalMinus + totalSum;
+    // console.log(total);
+
+function writoSorry(name){
+for (var i = 0; i < 10; i++){
+    console.log('sorry' + name);
 }
-const factorial = getFactorial(12);
-console.log('factorial of 12 is:', factorial);
+}
+writoSorry("mahim");
+
+function kmToMiles(km){
+    const result = km * 0.62;
+    console.log(result);
+}
+kmToMiles(2);
+
