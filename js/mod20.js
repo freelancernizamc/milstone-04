@@ -23,6 +23,7 @@ while(n<7){
 }
 
 // Video 01
+
 var fruits = ['mango', 'apple', 'guava', 'jackfruits', 'pineapple'];
 var numbers = [1, 2, 3, 4, 5, 6, 7];
 fruits.slice(1,3);
@@ -32,6 +33,7 @@ console.log(numbers);
 // array is immutable
 
 // Video 02
+// function declaration
 function startFan(){
     console.log('stand up');
     console.log('walk towards the switch');
@@ -49,7 +51,8 @@ function bringSingara(money){
 }
 bringSingara(100);
 
-// Video 03
+// Video 03: 20-3 Add Function parameter, handle multiple parameters
+
 function bringSingara(money){
     console.log('ai nen singara');
     console.log('taka decen', money);
@@ -70,7 +73,8 @@ function sum(a, b, c, d, e, f){
 }
 sum(15, 98, 56, 9, 8);
 
-// Video 04
+// Video 04: 20-4 Everything you need to know about return from a function
+
 function add(number1, number2){
     console.log(number1, number2);
     var sum = number1 + number2;
@@ -90,15 +94,19 @@ function bringSingara(money){
     var quantity = money / singaraPrice;
     return quantity;
 }
-var singaras = bringSingara(200);
+var myTaka = 150; 
+var singaras = bringSingara(myTaka);
 console.log('Eating singaras: ', singaras);
 
-// Video 05
-function functionname(parameters){
+// Video 05: 20-5 Function examples and Function summary
+
+function functionName(parameters){
     // function body
     // return
 }
-// var returnedValue = functionname(parameters value)
+// var returnedValue = functionName(parameters value)
+
+
 function getAverage (assignment1, assignment2, assignment3){
     const total = assignment1 + assignment2 + assignment3;
     const average = total / 3;
@@ -120,7 +128,8 @@ const result2 = add(35, 7);
 const finalResult = add(result1, result2);
 console.log(finalResult);
 
-// Video 06
+// Video 06 20-6 Declare multiple objects with multiple properties
+
 var student = { id: 115, 
     name: 'Solaiman khan', 
     class: 9,
@@ -274,3 +283,45 @@ var student = { id: 115,
       }
       console.log(print(1,2,3));
         
+    //   return
+    function myName(firstName, lastName){
+        let fullName = 'My Full Name is'+' ' + firstName +' '+ lastName;
+        return (fullName);
+        // let f
+    }
+    const newName = myName('Nizam','Uddin');
+    console.log(newName);
+
+//    Write a function for sum of three variables
+function getSum(a, b, c) {
+  return a + b + c;
+}
+
+let x = 10;
+let y = 20;
+let z = 30;
+let sumGpt = getSum(x, y, z);
+console.log(sumGpt); // Output: 60
+
+// meter to centimeter
+function meterToCentimeter(meter) {
+  return meter * 100;
+}
+
+let meter = 1;
+let centimeter = meterToCentimeter(meter);
+console.log(centimeter); // Output: 1000
+
+// Problem: Suppose you want to create a shopping cart where it will calculate the total price of the products added. Implement a function totalCost that will take an array of objects where each object will have two properties: name and price. The function totalCost will take the array of objects as a parameter and return the total price of the products added to the shopping cart.
+
+function totalCost(products) {
+    let total2 = 0;
+    for (let i = 0; i < products.length; i++) {
+      total2 += products[i].price;
+    }
+    return total2;
+  }
+  let products = [  { name: "Product 1", price: 10 },  { name: "Product 2", price: 20 },  { name: "Product 3", price: 30 }];
+  let total2 = totalCost(products);
+  console.log(total2); // Output: 60
+    
