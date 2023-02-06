@@ -77,7 +77,7 @@ console.log(result);
 
 const num6 = 25;
 const num7 = 45;
-const gap = num6 - num7;
+const gap = Math.abs(num6 - num7);
 console.log(gap);
 if(gap < 5){
     console.log('you guys can be friends');
@@ -86,19 +86,20 @@ else{
     console.log("You guys stay apart")
 }
 // ----
-const number = 2.5598;
-const fullNumber = Math.round(number);
+// const number = 2.5598;
+// const fullNumber = Math.round(number);
 //  console.log(fullNumber);
-// const result2 = Math.cell(2.0001);
+//  const result2 = Math.ceil(2.0001);
 // const result3 = Math.floor(456.259);
 // console.log(result2);
 // console.log(result3);
-// console.log(Math.random());
+//  console.log(Math.random());
 // const random = Math.round(Math.random()*100);
-for(let i = 0; i < 20; i++){
-const random = Math.round(Math.random()*6);
-console.log(random);
-}
+// console.log(random);
+// for(let i = 0; i < 20; i++){
+// const random = Math.round(Math.random()*6);
+// console.log(random);
+// }
 
 // Video 22-5 Swap variable, swap without temp, destructing
 
@@ -114,7 +115,7 @@ console.log(first, second);
 // const temp = first;
 // first = second;
 // second = temp;
-// approach 2
+// approach 2: --Destructuring
 [first, second] = [second, first];
 
 console.log(first, second);
@@ -145,7 +146,17 @@ else{
 Math.max(69, 97, 99);
 // Homework: 
 // Write a function that will take 3 numbers will return the max number
+function findMax(a, b, c) {
+    return Math.max(a, b, c);
+  }
+  console.log(findMax(10, 20, 30)); // Output: 3
+  
 // Write a function that will take 3 parameters and will return the min number
+function findMin(a, b, c) {
+    return Math.min(a, b, c);
+  }
+  console.log(findMin(10, 20, 30)); // Output: 1
+  
 // first time do it using if-else
 // second time do it using Math.min or Math.max
 
@@ -169,6 +180,11 @@ console.log('tallest person is:', tallest);
 
 // Homework:
 // write a function to get the lowest number in an array
+function findMinInArray(array) {
+    return Math.min(...array);
+  }
+  console.log(findMinInArray([10, 20, 30, 40, 5])); // Output: 1
+  
 // Video 22-8 Reverse a string and Reverse words in a sentence
 // function reverseString(text){
 //     let reversed = '';
@@ -205,17 +221,20 @@ reverseWords(myString);
 // fibo[3]= fibo[2] + fibo[1];
 // fibo[4]= fibo[3] + fibo[2];
 // fibo[5]= fibo[4] + fibo[3];
+// fibo[50] = fibo[49] + fibo[48];
 // fibo[n]= fibo[n-1] + fibo[n-2];
 const fibo = [0, 1];
-for(let i = 2; i <= 10; i++){
+for(let i = 2; i <= 15; i++){
     fibo[i] = fibo[i-1] + fibo[i-2];
 }
 console.log(fibo);
 
 // Video22-10 Module Summary and where you need to focus
 
+function myName(Name){
+    let fullName = 'My Name'+' ' + 'Nizam';
+    return fullName;
+}
 
-
-
-
-
+const name2 = myName('Nizam');
+console.log(name2);

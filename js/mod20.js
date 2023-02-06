@@ -151,10 +151,12 @@ var student = { id: 115,
     console.log(myComputer);
     console.log(myComputer.price);
     console.log(mobile.brand);
+    console.log(mobile.price);
     myComputer.processor = '179';
     console.log(myComputer);
 
-    // Video 07
+    // Video 07: 20-7 multiple ways to get and set object property
+
     var shoppingCart = {
         books: 3,
         sunglass: 1,
@@ -162,20 +164,23 @@ var student = { id: 115,
         mouse: 1,
         pen: 25
     }
-// when you know the property name, use dot notation
+    // console.log(shoppingCart);
+// when you know the specific property name, use dot notation
     var penCount = shoppingCart.pen;
     // alternative system
     // when you know..use this type
     var penCount2 = shoppingCart['pen'];
+    
 
-    // var properties = object.keys(shoppingCart);
+    //  var properties = object.keys(shoppingCart);
+    //  console.log(properties);
     // var propertyValues = object.values(shoppingCart);
     console.log(shoppingCart);
     var propertyName = 'mouse';
     var propertyValue = shoppingCart[propertyName];
 
     // Set property values
-    shoppingCart.mouse = 15;
+    shoppingCart.mouse = 20;
     console.log(shoppingCart);
 
     shoppingCart['mouse'] =29;
@@ -184,7 +189,8 @@ var student = { id: 115,
     shoppingCart[propertyName] = 89;
     console.log(shoppingCart);
 
-    // Video 08
+    // Video 08: 20-8 (advanced) Looping through an Object and Object summary
+
     var shoppingCart = {
         books: 3,
         sunglass: 1,
@@ -204,9 +210,9 @@ var student = { id: 115,
         kamal: 32,
         mahmud: 14
     }
-    var keys = ['books', 'sunglass', 'mouse', 'pen', 'shoes']
-    // const keys = object.keys(shoppingCart);
-    console.log(keys);
+    // var keys = ['books', 'sunglass', 'mouse', 'pen', 'shoes']
+    //  const keys = object.keys(shoppingCart);
+    // console.log(keys);
 
     // const values = object.vaiues(shoppingCart);
     // console.log(values);
@@ -223,7 +229,8 @@ var student = { id: 115,
         console.log(propertyValue);
     }
 
-    // Video 09
+    // Video 09: 20-9 Module summary and practice problem
+
 
     const color ='red';
     if(color === 'green'){

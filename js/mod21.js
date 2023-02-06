@@ -17,7 +17,7 @@ var myName = 'Nizam';
 // var thirdFriend = friends[2];
 // friends[3] = 'dambool';
 // 3. conditionals
-// >, <, >=,==, ===, !=, !===
+// >, <, >=,==, ===, !=, !==
 
 // if(friends.length <2){
 //     console.log('fokor tor kono friend nai');
@@ -43,11 +43,11 @@ var myName = 'Nizam';
 // }
 // console.log(isMoonUp);
 
-// Object
+// 6. Object
 // var jantus = {
 //     height: 60,
 //     romanticism: 'havvy',
-//     baerTaka: 'borolok',
+//     bapperTaka: 'borolok',
 // }
 // let age =11;
 // age = 12;
@@ -310,3 +310,161 @@ function kmToMiles(km){
 }
 kmToMiles(2);
 
+// inches to feet
+// const myInches = 12;
+// const myFeet = myInches /12;
+// console.log(myFeet);
+
+// const givenInches = 12;
+// const getFeet = givenInches /12;
+// console.log('getFeet', getFeet);
+function inchesToFeet(inches){
+    const feet = inches /12;
+    return feet;
+}
+const givenInches = 144;
+const getFeet = inchesToFeet(givenInches);
+console.log(getFeet);
+
+// feet to inches
+function feetToInches(feet){
+    const inches = feet * 12;
+    return inches;
+}
+const givenFeet = 5;
+const getInches = feetToInches(givenFeet);
+console.log(getInches);
+
+// even or odd
+console.log(4/2);
+console.log(4%2);
+console.log(98%2);
+console.log(7%2);
+function isEven(number){
+    const remainder = number % 2;
+    // console.log(remainder);
+    if(remainder === 0){
+        // console.log('number is even');
+        return true;
+    }
+    else{
+        // console.log('number is odd')
+        return false;
+    }
+}
+// 
+const myNumberIsEven = isEven(303);
+console.log(myNumberIsEven);
+const herNumberIsEven = isEven(1280);
+console.log(herNumberIsEven);
+
+// Leap year
+function isLeapYear(year){
+    const remainder = year % 4;
+    if(remainder ===0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+const isThisYearLeapYear= isLeapYear(1952);
+console.log('My Year', isThisYearLeapYear);
+
+
+// Find add sum of an array
+function getSumOfAnArray(array){
+    let sum = 0;
+    for(let i = 0; i < array.length; i++){
+        const index = i;
+        // console.log(index);
+        const element = array[index];
+        sum = sum+ element;
+        console.log(index, element, sum);
+    }
+    return sum;
+}
+
+const myArray = [12, 65, 45, 78,32, 45, 91];
+getSumOfAnArray(myArray)
+
+function getOddNumberOfAnArray(myNumbers){
+    const oddNumbers = [];
+    for(let i = 0; i<myNumbers.length; i++){
+        const index = i;
+        // console.log(i);
+        const element = myNumbers[index];
+        if(element % 2 === 1){
+            console.log(index, element);
+            oddNumbers.push(element);
+        }
+    }
+    return oddNumbers;
+}
+
+const myNumbers = [12, 65, 45, 78,32, 45, 91];
+const oddNumbers = getOddNumberOfAnArray(myNumbers);
+console.log(oddNumbers);
+const oddNumberSum = getSumOfAnArray(oddNumbers);
+console.log('odd number sum', oddNumberSum);
+
+
+// Factorial
+let sumf = 0;
+for(let i = 1; i<= 7; i++){
+    sumf = sumf + i;
+    console.log(i, sumf);
+}
+
+// multiplication
+function factorial(number){
+    let result = 1;
+    for(let i = 1; i<= number; i++){
+        result = result *i;
+    }
+    return result;
+}
+const result = factorial(9);
+console.log(result);
+
+
+function factorial(number){
+    let resultf = 1;
+    for(let i = number; i >=1;i--){
+        resultf = resultf *i;
+        console.log(i);
+    }
+    return resultf;
+}
+const number = 6;
+const fact = factorial(number);
+console.log('factorial of:', number, fact);
+
+// by while loop
+function factorial(number){
+    let num = 1;
+    let result = 1;
+   
+    while(num <=number){
+        result = result * num;
+        num++;
+    }
+    return result;
+}
+
+const output2 = factorial(7);
+console.log(output2);
+
+
+
+function factorial(number){
+    let i = number;
+    let result = 1;
+    while(i >= 1){
+        result = result * i;
+        i--;
+    }
+    return result;
+}
+const output = factorial(11);
+console.log(output);

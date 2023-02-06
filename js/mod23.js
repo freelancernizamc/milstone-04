@@ -237,7 +237,35 @@ function multiply(num1, num2){
 const output = multiply(12,45);
 console.log(output);
 
+// slice
+number = [20, 30, 40, 50, 60, 70, 80];
+const partial3 = number.slice(2, 6);
+console.log(partial3);
+console.log(number);
 
+// splice
+const cut = number.splice(2, 3);
+console.log(cut);
+const partial4 = number.splice(2, 4, 99, 555, 8888);
+console.log(partial4);
+console.log(number);
+
+// foo and bar
+for(let i = 1; i<= 50; i++){
+if(i % 3 ===0 && i % 5 === 0){
+        console.log('foobar');
+       }
+    else if(i% 3===0){
+    console.log('foo');
+   }
+   else if(i % 5 === 0){
+    console.log('bar');
+        }
+   
+   else{
+    console.log(i);
+   }
+} 
 
 
 
