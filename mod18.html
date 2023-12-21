@@ -81,20 +81,22 @@
             text-decoration: underline;
             font-size: 50px;
             font-weight: bolder;
-            color: #0F0826;
-            background-color: yellow;
+            color: #f2effd;
+            background-color: rgb(32, 32, 3);
         }
         .video{
             text-align: center;
             font-size: 40px;
             font-weight: bold;
             color: navy;
+            background-color: aquamarine;
         }
         .video2{
             text-align: center;
             font-size: 40px;
             font-weight: bold;
-            color:green;
+            color:rgb(183, 238, 183);
+            background-color: rgb(5, 5, 46);
         }
         .quiz{
             margin-left: 50px;
@@ -146,10 +148,18 @@
                 <li><a href="mod23.html">Module-23</a></li>
                 <li><a href="Mod20.html">Milstone</a>
                     <ul class="dropdown">
-                        <li class="dropdown-content"><a href="#">Milstone-01</a></li>
-                        <li><a href="#">Milstone-02</a></li>
-                        <li><a href="#">Milstone-03</a></li>
-                        <li><a href="#">Milstone-04</a></li>
+                        <li><a href="https://freelancernizamc.github.io/milstone-01/">Milstone-01</a></li>
+                        <li><a href="https://milstone-2.netlify.app/">Milstone-02</a></li>
+                        <li><a href="https://freelancernizamc.github.io/milstone-03/">Milstone-03</a></li>
+                        <li><a href="https://freelancernizamc.github.io/milstone-04/">Milstone-04</a></li>
+                        <li><a href="https://milstone-05.netlify.app/">Milstone-05</a></li>
+                        <li><a href="https://freelancernizamc.github.io/milstone-06/">Milstone-06</a></li>
+                        <li><a href="https://freelancernizamc.github.io/milstone-07/">Milstone-07</a></li>
+                        <li><a href="https://milstone-08.vercel.app/">Milstone-08</a></li>
+                        <li><a href="https://freelancernizamc.github.io/milstone-09/">Milstone-09</a></li>
+                        <li><a href="https://milstone-10.vercel.app/">Milstone-10</a></li>
+                        <li><a href="https://milstone-11.vercel.app/">Milstone-11</a></li>
+                        <li><a href="#">Milstone-12</a></li>
                     </ul>
                 </li>
             </ul>
@@ -169,16 +179,118 @@
     <main>
         <h1 class="title"> Module-18 Practice Section</h1>
         <h2 class="video">Video 18-0: Basic Concepts of variable all in one</h2>
-        <h3 class="video2">Video 18-1: Module Introduction and Variable recap</h3>
-        <h2 class="video">Video 18-2 : Declare Array, array length and array index</h2>
-        <h3 class="video2">Video 18-3 : Array index, get and set by index, indexOf</h3>
-        <h2 class="video">Video 18-4 : Add or remove element from array using push, pop</h2>
+        <h3 class="video2">Video 18-1: Module Introduction and Variable recap</h3><br>
+        <pre>
+            Two types of number : Integer: 120; float,/decimal 8.99;
+
+            Variable naming convension: rules, best practice:
+
+            1. single word
+            2. no gap or speace
+            3. no quote
+            4. no keyword
+            5. can not start with a number
+            6. can not contain dash
+            7. should use camelCase
+        </pre>
+        <h2 class="video">Video 18-2 : Declare Array, array length and array index</h2><br>
+        <pre>
+            Three things to write array: first [], gap then ,=⇒ var friendAge = [11, 23, 67, 87]; or var nayikas= [ ‘mahi’ ‘shabnur’ , ‘opu’];
+
+            console.log(array name.length)=⇒ number of array elements.==array position\ index starts from zero.
+        </pre>
+        <h3 class="video2">Video 18-3 : Array index, get and set by index, indexOf</h3><br>
+        <code>
+            var numbers = [45, 68, 78, 56, 89, 98];
+            //get element by index
+            console.log(numbers[0])=> to finf first element=>45
+            var element = numbers[1];
+            console.log(element);  Result-68;
+            numbers[1] = 77;
+            numbers[3] = 44;
+            console.log(numbers); => [45, 77, 78,44, 89, 98];
+        </code>
+        <h2 class="video">Video 18-4 : Add or remove element from array using push, pop</h2><br>
+        <pre>
+            var friend =[’balam’, ‘kalam’, ‘salam’];
+
+            friends.push(’galam’);
+
+            console.log(friends);
+
+            number.pop();=⇒ to remove last element from aray
+
+            Search google: 
+
+            How to add a element of the beginning of array.
+        </pre>
         <p class="video2"> Search Google: How to add an element to an array of the beginning. and how to remove first element of an array of javascript</p>
         <h2 class="video">Video 18-5 Compare variables and Comparison operator</h1>
-        <h3 class="video2">Video 18-6 Make conditional decision, if-else, comparison</h3>
-        <h2 class="video">Video 18-7 Handle multiple conditions, and or</h2>
+        <h3 class="video2">Video 18-6 Make conditional decision, if-else, comparison</h3><br>
+        <code>
+            var iphonePrice = 79000;
+            var myBudget = 9500;
+            // if iphone price is less than my budget, i will buy the phone
+            if(condition){
+            //will execute if the condition is true
+            }
+            if(chickenPrice < myMoney){
+            console.log('I will eat chicken');
+            }
+            else{
+            console.log('I will eat potato');
+            }
+        </code>
+        <h2 class="video">Video 18-7 Handle multiple conditions, and or</h2><br>
+        <pre>
+            <code>
+                var isGraduated= true;
+                var salary - 60000;
+                if(isGraduated === true && salary > 50000){
+                console.log('Eso biye kore feli')
+                }
+                else{
+                console.log('tor kopale Biya nai')
+                }
+
+                if((isGraduated === true || salary > 50000) || cars>= 1){
+                console.log('Eso prem kori');
+                }
+                else{
+                console.log('Tumar kopale premnai')
+                }
+            </code>
+        </pre>
         <h3 class="video2">Video 18-8 (advanced) Multi stage condition and nested conditionsr</h3>
-        <h2 class="video">18-9 Module summary and two more comparison</h2>
+        <pre>
+            <code>
+                var money = 10;
+                var danishPrice = 45;
+                var butterBread = 35;
+                var toastBiscute = 20;
+                if(danishPrice< money){
+                console.log('Dan den danish khamu');
+                }
+                else if (butterBread < money){
+                console.log('Butter bon khamu')
+                }
+                else if(toastBiscute < money){
+                console.log('Toast biscute khamu)
+                }
+                else('Khali cha khamu')
+            </code>
+        </pre>
+        <h2 class="video">18-9 Module summary and  two more comparison</h2>
+        <pre style="font-size: 22px;">
+            - Array is a collection of similar data elements
+            - Array index indicates the position of the element within the array
+            - Array length is the total number of the elements in an array
+            - The indexOf() method returns the index (position) of a specified value.
+            - We van replace an element in an array with the help of array indices
+            - e.g arrayName[index] = newValue
+            - The push() method adds new items to the end of an array
+            - The pop() method removes the last element from the end of an array
+        </pre>
         <section class="quiz">
             <h1 class="title">QUIZ</h1>
             <h2> Q1: What is the starting index of an array?<br>
@@ -220,30 +332,57 @@
         <div class="part1">
             <img src="images/nizam2.png">
             <h1>Md Nizam Uddin</h1>
+            <h2>Mobile: +8801819968181</h2>
             <h2>Batch 07</h2>
             <h3></h3>
         </div>
         <div class="part2">
             <h1>Assignment</h1>
-                <li><a href="#">Assignment-01</a></li>
-                <li><a href="#">Assignment-02</a></li>
-                <li><a href="#">Assignment-03</a></li>
+                <li><a href="https://freelancernizamc.github.io/assignment-1/">Assignment-01</a></li>
+                <li><a href="https://freelancernizamc.github.io/assignment-2/">Assignment-02</a></li>
+                <li><a href="https://assignment-03-bynizam.netlify.app/">Assignment-03</a></li>
                 <li><a href="#">Assignment-04</a></li>
+                <li><a href="https://assignment-5by-nizam.netlify.app/">Assignment-05</a></li>
+                <li><a href="https://assignment-06-bynizam.netlify.app/">Assignment-06</a></li>
+                <li><a href="https://assignment-7-bynizam.netlify.app/">Assignment-07</a></li>
+                <li><a href="https://assignment-8-bynizam.netlify.app/">Assignment-08</a></li>
+                <li><a href="https://assignment-9-jobportal.netlify.app/">Assignment-09</a></li>
+                <li><a href="https://assignment-10-client-2c6e3.web.app/">Assignment-10</a></li>
+                <li><a href="https://assignment-11-client-4d7d4.web.app/">Assignment-11</a></li>
+                <li><a href="https://assignment-12-client-ae808.web.app/">Assignment-12</a></li>
         </div>
         <div class="part2">
             <h1>My Projects</h1>
-            <li><a href="#">Digital Agency</li>
-            <li><a href="#">Digital Agency</li>
-            <li><a href="#">Digital Agency</li>
-            <li><a href="#">Digital Agency</li>
+            <li><a href="https://freelancernizamc.github.io/digital-agency/">Digital Agency</li>
+            <li><a href="https://tea-house-by-n.netlify.app/">Tea House</li>
+            <li><a href="https://freelancernizamc.github.io/penguins-fashion/">Penguine Fashion</li>
+            <li><a href="https://freelancernizamc.github.io/convension-center/">Convension Center</li>
+            <li><a href="https://freelancernizamc.github.io/shoe-collection/">Shoe Collection</li>
+            <li><a href="https://freelancernizamc.github.io/jakanaka-project/">Jakanaka Projects</li>
+            <li><a href="https://reveal-bs.netlify.app/">Reveal</li>
+            <li><a href="https://myshoppingcart2.netlify.app/">Shopping Cart</li>
+            <li><a href="https://studycamp-57860.web.app/">Study Camp</li>
+            <li><a href="https://freelancernizamc.github.io/milstone-03/projects.html">Bikerz Zone</li>
+            <li><a href="https://book-cafe-react.netlify.app/">Book Cafe</li>
+            <li><a href="https://smart-gadget-react.netlify.app/">Smart Gadget</li>
         </div>
         <div class="part2">
             <h2 style="color:bisque;font-size:25px;">Milstone</h2>
-            <li><a href="#">Milstone-01</li>
-            <li><a href="#">Milstone-02</li>
-            <li><a href="#">Milstone-03</li>
-            <li><a href="index.html">Milstone-04</li>
+            <li><a href="https://freelancernizamc.github.io/milstone-01/">Milstone-01</li>
+            <li><a href="https://milstone-2.netlify.app/">Milstone-02</li>
+            <li><a href="https://freelancernizamc.github.io/milstone-03/index.html">Milstone-03</li>
+            <li><a href="https://freelancernizamc.github.io/milstone-04/">Milstone-04</li>
+            <li><a href="https://milstone-05.netlify.app/">Milstone-05<i>
+            <li><a href="https://freelancernizamc.github.io/milstone-06/">Milstone-06</li>
+            <li><a href="https://freelancernizamc.github.io/milstone-07/">Milstone-07</li>
+            <li><a href="https://milstone-08.vercel.app/">Milstone-08</li>
+            <li><a href="https://freelancernizamc.github.io/milstone-09/">Milstone-09</li>
+            <li><a href="https://milstone-10.vercel.app/">Milstone-10</li>
+            <li><a href="https://milstone-11.vercel.app/">Milstone-11</li>
+            <li><a href="index.html">Milstone-12</li>
         </div>
+        
     </footer>
+    <p style="text-align: center; background-color: rgb(5, 5, 46);color:bisque;">Copyright&copy; 2023 Allright Reserved</p>
 </body>
 </html>
